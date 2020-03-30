@@ -1,20 +1,17 @@
 def bubble_sort(arr)
-  n = arr.length
+  (arr.length).times do
   swapped = false
-  until swapped == false
-  swapped = false
-  i = 0
-  (n-1).times do
+  (arr.length-1).times do |i|
       if arr[i]>arr[i+1]
       arr[i], arr[i+1] = arr[i+1], arr[i]
-      puts arr
       swapped = true
       end
     end
+    break arr if swapped==false
   end
 end
 
-bubble_sort([1,4,5,6,7])
+puts bubble_sort([1,3,9,6,99,100,32,7])
 
 
 =begin
