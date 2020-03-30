@@ -1,11 +1,12 @@
 def bubble_sort(arr)
-  (arr.length-1).times do |i|
-    if arr[i] > arr[i+1] then 
-      arr[i], arr[i+1] = arr[i+1], arr[i]
-      swapped = true
+  for a in 0..arr.length-1
+    for b in (a+1)..arr.length-1
+      if arr[a]>arr[b]
+      arr[a], arr[b] = arr[b], arr[a]
+      end
     end
   end
-arr
+  p arr
 end
 
-puts bubble_sort([100,200,99,32,9,8,6,5,4,3])
+bubble_sort([99,100,22,7,2,1,4,5,3])
