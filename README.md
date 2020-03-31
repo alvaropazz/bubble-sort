@@ -13,6 +13,10 @@ Additional description about the project and its features.
 - Ruby,
 - VSCode.
 
+## Setup
+
+- To run this project use the terminal and the command $rb #{file_name.rb}
+
 ## Authors
 
 👤 **Ugochukwu Omeje**
