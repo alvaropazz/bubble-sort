@@ -6,5 +6,3 @@ def bubble_sort(arr)
   end
   p arr
 end
-
-bubble_sort([99, 100, 22, 7, 2, 1, 4, 5, 3])
